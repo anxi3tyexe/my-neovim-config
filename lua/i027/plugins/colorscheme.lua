@@ -1,6 +1,6 @@
 return {
     'eddyekofo94/gruvbox-flat.nvim',
-    priority = 1000,
+    priority = 3000,
     enabled = true,
     config = function()
         vim.g.gruvbox_transparent = true
