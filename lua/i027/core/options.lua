@@ -27,8 +27,13 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+-- removes colorcolumn
 vim.opt.colorcolumn = ""
 
+-- adding sistem clipboard
+vim.opt.clipboard:append("unnamedplus")
+
+---| This is for adding borders to lsp popups \---
 local _border = "single"
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -42,3 +47,4 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 vim.diagnostic.config({
 	float = { border = _border },
 })
+--------------------------------------------------
